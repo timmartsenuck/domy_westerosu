@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ankieta – Rody Westeros</title>
+
+<style>
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.formularz {
+    width: 400px;
+    margin: 50px auto; /* wyśrodkowanie */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #777;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="Quiz" id="formulrz>
+<h1>Ankieta: Rody Westeros</h1>
+
+<form action="mailto:timmartsenuck@gmail.com" method="POST">
+
+<label>Twoje imię:</label>
+<input type="text" name="imie">
+
+<label>Ulubiony ród:</label>
+<select name="rod">
+  <option>Stark</option>
+  <option>Lannister</option>
+  <option>Targaryen</option>
+  <option>Baratheon</option>
+  <option>Greyjoy</option>
+  <option>Tyrell</option>
+  <option>Arryn</option>
+  <option>Tully</option>
+</select>
+
+<label>Ulubiona postać:</label>
+<input type="text" name="postac">
+
+<label>Kto powinien rządzić Żelaznym Tronem?</label><br>
+<input type="radio" name="tron"> Jon Snow<br>
+<input type="radio" name="tron"> Daenerys<br>
+<input type="radio" name="tron"> Tymofii (najlepszy wybór)<br>
+<input type="radio" name="tron"> Inny<br><br>
+
+<label>Jakie cechy cenisz?</label><br>
+<input type="checkbox"> Honor<br>
+<input type="checkbox"> Spryt<br>
+<input type="checkbox"> Siła<br><br>
+
+<label>Twoja opinia:</label>
+<textarea rows="4"></textarea>
+
+<input type="submit" value="Wyślij">
+
+</form>
+</div>
+
+</body>
+</html>
